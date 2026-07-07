@@ -37,8 +37,9 @@ def test_build_spine_seeds_connections(tmp_path):
                    encoding="utf-8")
     out = write_spine(src)
     data = json.loads(out.read_text(encoding="utf-8"))
-    # 4 resolutions x 1 corpus node = 4 seeded connections
-    assert len(data["spine"]["connections"]) == 4
+    # one connection per (resolution x corpus node)
+    expected = len(data["spine"]["resolutions"]) * len(data["corpus"])
+    assert len(data["spine"]["connections"]) == expected
     # every connection references a declared resolution
     res_names = {r["name"] for r in data["spine"]["resolutions"]}
     assert all(c["resolution"] in res_names

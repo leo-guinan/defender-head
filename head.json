@@ -1,16 +1,32 @@
 {
   "schema_version": "1.0",
-  "id": "TEMPLATE",
-  "name": "Example Head",
-  "aliases": [],
+  "id": "defender",
+  "name": "Defender of Basic",
+  "aliases": [
+    "Omar Shehata",
+    "DefenderOfBasic",
+    "Omar"
+  ],
   "headshot": "assets/headshot.svg",
-  "bio": "A placeholder mind-node. Clone this template per person; edit head.json, drop in a real headshot, point corpus at their searchable body of work.",
+  "bio": "Initiator of the Defender persona and the ORI brain-dump; works on memetics, community architecture, and open research infrastructure. Omar and Defender are the same person(ish) — one identity, multiple surfaces.",
   "corpus": [
     {
-      "name": "Example Corpus Node",
-      "url": "https://github.com/leo-guinan/head-template",
+      "name": "ORI Discord beamline export",
+      "url": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
+      "type": "discord-export",
+      "search": "https://github.com/leo-guinan/ori-discord-beamline-baseline/search?q={q}&type=code"
+    },
+    {
+      "name": "DefenderOfBasic GitHub",
+      "url": "https://github.com/DefenderOfBasic",
       "type": "github",
-      "search": "https://github.com/search?q=repo%3Aleo-guinan%2Fhead-template+{q}&type=code"
+      "search": "https://github.com/search?q=org%3ADefenderOfBasic+{q}&type=repositories"
+    },
+    {
+      "name": "Defender community archive (CA mirror)",
+      "url": "https://fabxmporizzqflnftavs.supabase.co/storage/v1/object/public/archives/defenderofbasic/archive.json",
+      "type": "supabase",
+      "search": "manual"
     }
   ],
   "spine": {
@@ -34,38 +50,102 @@
     ],
     "connections": [
       {
-        "label": "project: Example Corpus Node",
+        "label": "project: ORI Discord beamline export",
         "resolution": "project",
-        "target": "https://github.com/leo-guinan/head-template",
+        "target": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
         "evidence": [
-          "https://github.com/search?q=repo%3Aleo-guinan%2Fhead-template+project&type=code"
+          "https://github.com/leo-guinan/ori-discord-beamline-baseline/search?q=project&type=code"
         ]
       },
       {
-        "label": "topic: Example Corpus Node",
+        "label": "project: DefenderOfBasic GitHub",
+        "resolution": "project",
+        "target": "https://github.com/DefenderOfBasic",
+        "evidence": [
+          "https://github.com/search?q=org%3ADefenderOfBasic+project&type=repositories"
+        ]
+      },
+      {
+        "label": "project: Defender community archive (CA mirror)",
+        "resolution": "project",
+        "target": "https://fabxmporizzqflnftavs.supabase.co/storage/v1/object/public/archives/defenderofbasic/archive.json",
+        "evidence": [
+          "manual"
+        ]
+      },
+      {
+        "label": "topic: ORI Discord beamline export",
         "resolution": "topic",
-        "target": "https://github.com/leo-guinan/head-template",
+        "target": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
         "evidence": [
-          "https://github.com/search?q=repo%3Aleo-guinan%2Fhead-template+topic&type=code"
+          "https://github.com/leo-guinan/ori-discord-beamline-baseline/search?q=topic&type=code"
         ]
       },
       {
-        "label": "idea: Example Corpus Node",
+        "label": "topic: DefenderOfBasic GitHub",
+        "resolution": "topic",
+        "target": "https://github.com/DefenderOfBasic",
+        "evidence": [
+          "https://github.com/search?q=org%3ADefenderOfBasic+topic&type=repositories"
+        ]
+      },
+      {
+        "label": "topic: Defender community archive (CA mirror)",
+        "resolution": "topic",
+        "target": "https://fabxmporizzqflnftavs.supabase.co/storage/v1/object/public/archives/defenderofbasic/archive.json",
+        "evidence": [
+          "manual"
+        ]
+      },
+      {
+        "label": "idea: ORI Discord beamline export",
         "resolution": "idea",
-        "target": "https://github.com/leo-guinan/head-template",
+        "target": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
         "evidence": [
-          "https://github.com/search?q=repo%3Aleo-guinan%2Fhead-template+idea&type=code"
+          "https://github.com/leo-guinan/ori-discord-beamline-baseline/search?q=idea&type=code"
         ]
       },
       {
-        "label": "claim: Example Corpus Node",
-        "resolution": "claim",
-        "target": "https://github.com/leo-guinan/head-template",
+        "label": "idea: DefenderOfBasic GitHub",
+        "resolution": "idea",
+        "target": "https://github.com/DefenderOfBasic",
         "evidence": [
-          "https://github.com/search?q=repo%3Aleo-guinan%2Fhead-template+claim&type=code"
+          "https://github.com/search?q=org%3ADefenderOfBasic+idea&type=repositories"
+        ]
+      },
+      {
+        "label": "idea: Defender community archive (CA mirror)",
+        "resolution": "idea",
+        "target": "https://fabxmporizzqflnftavs.supabase.co/storage/v1/object/public/archives/defenderofbasic/archive.json",
+        "evidence": [
+          "manual"
+        ]
+      },
+      {
+        "label": "claim: ORI Discord beamline export",
+        "resolution": "claim",
+        "target": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
+        "evidence": [
+          "https://github.com/leo-guinan/ori-discord-beamline-baseline/search?q=claim&type=code"
+        ]
+      },
+      {
+        "label": "claim: DefenderOfBasic GitHub",
+        "resolution": "claim",
+        "target": "https://github.com/DefenderOfBasic",
+        "evidence": [
+          "https://github.com/search?q=org%3ADefenderOfBasic+claim&type=repositories"
+        ]
+      },
+      {
+        "label": "claim: Defender community archive (CA mirror)",
+        "resolution": "claim",
+        "target": "https://fabxmporizzqflnftavs.supabase.co/storage/v1/object/public/archives/defenderofbasic/archive.json",
+        "evidence": [
+          "manual"
         ]
       }
     ]
   },
-  "last_built": "2026-07-07T16:37:55.792601+00:00"
+  "last_built": "2026-07-07T16:40:21.127657+00:00"
 }
