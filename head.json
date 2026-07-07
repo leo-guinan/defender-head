@@ -8,7 +8,8 @@
     "Omar"
   ],
   "headshot": "assets/headshot.svg",
-  "bio": "Initiator of the Defender persona and the ORI brain-dump; works on memetics, community architecture, and open research infrastructure. Omar and Defender are the same person(ish) — one identity, multiple surfaces.",
+  "bio": "Initiator of the Defender persona and the ORI brain-dump; works on memetics, community architecture, and open research infrastructure. Omar and Defender are the same person(ish) — one identity, multiple surfaces. Headshot is a deterministic identicon derived from the Community Archive accountId (the Twitter CDN avatar URL is dead).",
+  "headshot_source": "identicon:accountId:1680757426889342977",
   "corpus": [
     {
       "name": "Defender body of work",
