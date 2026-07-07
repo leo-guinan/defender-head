@@ -11,6 +11,12 @@
   "bio": "Initiator of the Defender persona and the ORI brain-dump; works on memetics, community architecture, and open research infrastructure. Omar and Defender are the same person(ish) — one identity, multiple surfaces.",
   "corpus": [
     {
+      "name": "Defender body of work",
+      "url": "https://github.com/leo-guinan/defender-body",
+      "type": "github",
+      "search": "https://github.com/leo-guinan/defender-body/search?q={q}&type=code"
+    },
+    {
       "name": "ORI Discord beamline export",
       "url": "https://github.com/leo-guinan/ori-discord-beamline-baseline",
       "type": "discord-export",
